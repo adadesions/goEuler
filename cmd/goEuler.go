@@ -1,5 +1,0 @@
-package goEuler
-
-func main() {
-	
-}

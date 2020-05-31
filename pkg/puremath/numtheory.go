@@ -5,18 +5,22 @@ import . "math"
 func IsPrime(k int) bool {
 	if k == 2 {
 		return true
-	} else if k < 2{
+	} else if k < 2 {
 		return false
 	}
 
 	result := true
 	lim := int(Ceil(Sqrt(float64(k))))
 	for div := 2; div <= lim; div++ {
-		if k % div == 0 {
+		if k%div == 0 {
 			result = false
 			break
 		}
 	}
 
 	return result
+}
+
+func Truth() bool {
+	return true
 }
